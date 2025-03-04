@@ -58,7 +58,7 @@ body{
     line-height: 4rem;
 }
 .c-orange{
-    color: #6f34fe;
+    color: #1e6cd1;
     font-weight: 700;
     font-size: 4rem;
 }
@@ -80,7 +80,7 @@ body{
     position: relative;
 }
 .html{
-    color:#8a5df4
+    color:#b5f45d
 }
 .css{
     color:rgb(252, 183, 55)
@@ -127,18 +127,18 @@ body{
 
 /* expertise section starts */
 .heading small{
-    color: #6f34fe;
+    color: #3669e0;
     font-size: 1.5rem;
     font-weight: 600;
 }
 .heading h3{
     margin-top: 0.5rem;
-    color: #31239b;
+    color: #3669e0;
     font-size: 2.5rem;
     font-weight: 700;
 }
 .expertise h4{
-    color: #483ca3;
+    color: #3669e0;
     font-weight: 700;
 }
 .expertise a{
@@ -146,7 +146,7 @@ body{
     color: #fca61f;
 }
 .expertise a:hover{
-    color: #6f34fe;
+    color: #3669e0;
 }
 .expertise .service-card{
     text-align: center;
@@ -489,3 +489,32 @@ footer .link-group a:hover{
 }
 
 /* Dark Theme Text Contrast */
+.dark-theme {
+    --primary-color: #50b4f7;  /* Bright vibrant purple */
+    --secondary-color: #ff9e9e;
+    --accent-color: #20c997;   /* Keep existing teal for accents */
+    
+    /* Text color adjustments */
+    --text-color: #f0f0f0;
+    --heading-color: #ffffff;
+}
+
+/* Specific text element adjustments */
+.dark-theme .c-orange,
+.dark-theme .heading h3,
+.dark-theme .expertise h4,
+.dark-theme .testimonial h4,
+.dark-theme .blogpost h4 {
+    color: var(--primary-color) !important;
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .link,
+.dark-theme .blogpost a {
+    color: var(--primary-color) !important;
+}
+
+.dark-theme .link:hover,
+.dark-theme .blogpost a:hover {
+    color: var(--accent-color) !important;
+}
