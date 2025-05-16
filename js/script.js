@@ -161,3 +161,26 @@ mybutton.addEventListener("click",function(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+
+
+let arduinoProgress = document.querySelector(".arduino"),
+  arduinoValue = document.querySelector(".arduino-progress");
+
+let arduinoStartValue = 0,
+  arduinoEndValue = 50,
+  arduinospeed = 70;
+
+let progressarduino = setInterval(() => {
+  arduinoStartValue++;
+
+  arduinoValue.textContent = `${arduinoStartValue}%`;
+  arduinoProgress.style.background = `conic-gradient(#7d2ae8 ${
+    arduinoStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (arduinoStartValue == arduinoEndValue) {
+    clearInterval(progressarduino);
+  }
+}, arduinospeed);
+
